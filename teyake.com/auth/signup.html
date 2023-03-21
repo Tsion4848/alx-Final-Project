@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up | Teyake</title>
+    <link rel="stylesheet" href="../style-reset.css" />
+    <link rel="stylesheet" href="signup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="header-left">
+          <img src="../assets/teyake_white_fill.png" class="logo" />
+          <nav>
+            <ul class="primary-nav flex">
+              <li class=""><a href="../index.html">Home</a></li>
+              <li class="nav-active"><a href="#">Sign Up</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header-right flex items-center">
+          <div class="sign-in flex gap-4">
+            <a href="signin.html"><button type="button">Sign In</button></a>
+            <!-- <button type="button">Sign Up</button> -->
+          </div>
+          <!-- Exam Key input Section -->
+          <div class="flex flex-col items-center gap-2">
+            <form
+              action="#"
+              class="enter-exam-head flex text-center items-center"
+            >
+              <div class="enter-exam-input">
+                <input
+                  type="text"
+                  name="exam-key"
+                  id="exam-key"
+                  placeholder="Enter Exam Key"
+                />
+                <button
+                  type="submit"
+                  class="btn enter-exam-btn enter-exam-head-btn"
+                >
+                  Next
+                </button>
+              </div>
+            </form>
+          </div>
+          <!-- End of exam key input section -->
+        </div>
+      </div>
+      <main class="sign-up-page flex items-center justify-center">
+        <div class="auth-box flex flex-col items-center justify-center">
+          <div class="sign-up-form">
+            <div class="signup-header">
+              <h2>register an account</h2>
+              <div class="progress-container">
+                <div class="progress-step current-progress">
+                  <span class="num num-active">1</span>User
+                </div>
+                <div class="progress-step">
+                  <span class="num">2</span>Details
+                </div>
+              </div>
+            </div>
+
+            <div class="first-form forms">
+              <form action="">
+                <label for="fullname">Name: </label>
+                <input
+                  type="text"
+                  name="fullname"
+                  class="auth-input"
+                  id="fullname-input"
+                  placeholder="Input Full Name"
+                  required
+                />
+
+                <label for="username">Username: </label>
+                <input
+                  type="text"
+                  name="phoneNumber"
+                  class="auth-input"
+                  id="username-input"
+                  placeholder="Input Username"
+                  required
+                />
+
+                <label for="password">Password:</label>
+                <input
+                  type="password"
+                  class="auth-input"
+                  name="pass"
+                  id="password-input"
+                  placeholder="Input Password"
+                />
+
+                <label for="comfirm">Comfirm Password:</label>
+                <input
+                  type="password"
+                  class="auth-input"
+                  name="comfirm"
+                  id="comfirm-password"
+                  placeholder="Comfirm Entered Password"
+                />
+              </form>
+            </div>
+          </div>
+          <div class="second-form forms hidden">
+            <form action="">
+              <label for="phone-input">Phone Number: </label>
+              <input
+                type="tel"
+                name="phoneNumber"
+                class="auth-input"
+                id="phone-input"
+                placeholder="Input Phone Number"
+                required
+              />
+
+              <label for="email-input">Email: </label>
+              <input
+                type="email"
+                name="email"
+                class="auth-input"
+                id="email-input"
+                placeholder="Input Email Address"
+                required
+              />
+
+              <label for="institution" class="flex gap-4 items-center">
+                Institution</label
+              >
+              <input
+                type="text"
+                class="auth-input"
+                name=""
+                id="institution-input"
+                placeholder="Enter your institution"
+              />
+            </form>
+          </div>
+
+          <p id="errorMsg"></p>
+
+          <div>
+            <button class="btn-signup" id="pre-signup" disabled>
+              Previous
+            </button>
+            <button type="submit" class="btn-signup" id="next-signup">
+              Next
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+  <script src="signup.js" type="module"></script>
+</html>
